@@ -8,23 +8,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
     <title>FASCO</title>
   </head>
   <body>
     <header>
-      <div class="container header">
-        <div class="logo">
-          <img src="images/FASCO.png" alt="logo" />
-        </div>
+      <div class="container">
         <nav>
+          <div class="logo">
+            <img src="images/FASCO.png" alt="FASCO Logo" />
+          </div>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="deals.html">Deals</a></li>
-            <li><a href="new-arrivals.html">New Arrivals</a></li>
-            <li><a href="packages.html">Packages</a></li>
+            <li><a href="#home-section">Home</a></li>
+            <li><a href="#deals-section">Deals</a></li>
+            <li><a href="#new-arrivals-section">New Arrivals</a></li>
+            <li><a href="#slide-section">Packages</a></li>
             <li><a href="sign-in.html">Sign in</a></li>
             <li><a href="sign-up.html" class="sign-up">Sign Up</a></li>
           </ul>
@@ -32,42 +32,470 @@
       </div>
     </header>
     <main>
-      <!-- hero -->
-      <div class="container hero">
-        <div class="hero-image">
-          <img src="images/hero-1.png" alt="Hero Image 1" />
+      <!-- Hero Section -->
+      <section class="home-section" id="deals-section">
+        <div class="container hero">
+          <div class="hero-image">
+            <img src="images/hero-1.png" alt="Hero Image 1" />
+          </div>
+          <div class="hero-content">
+            <img src="images/hero-3.png" alt="Hero Image 3" />
+            <h1>ULTIMATE</h1>
+            <h2>SALE</h2>
+            <p>NEW COLLECTION</p>
+            <button aria-label="Shop Now">Shop Now</button>
+            <img src="images/hero-4.png" alt="Hero Image 4" />
+          </div>
+          <div class="hero-image">
+            <img src="images/hero-2.png" alt="Hero Image 2" />
+          </div>
         </div>
-        <div class="hero-content">
-          <img src="images/hero-3.png" alt="Hero Image 3" />
-          <h1>ULTIMATE</h1>
-          <h2>SALE</h2>
-          <p>NEW COLLECTION</p>
-          <button>Shop Now</button>
-          <img src="images/hero-4.png" alt="Hero Image 4" />
-        </div>
-        <div class="hero-image">
-          <img src="images/hero-2.png" alt="Hero Image 2" />
-        </div>
-      </div>
+      </section>
 
-      <!-- brand logos -->
-      <div class="container logos">
-        <div class="logo-item">
-          <img src="images/brand-logo-1.png" alt="Chanel Logo" />
+      <!-- Brand Logos Section -->
+      <!-- TODO change small logo -->
+      <section class="brand-logos-section">
+        <div class="container brand-logos">
+          <div class="logo-item">
+            <img src="images/brand-logo-1.png" alt="Chanel Logo" />
+          </div>
+          <div class="logo-item">
+            <img src="images/brand-logo-2.png" alt="Louis Vuitton Logo" />
+          </div>
+          <div class="logo-item">
+            <img src="images/brand-logo-3.png" alt="Prada Logo" />
+          </div>
+          <div class="logo-item">
+            <img src="images/brand-logo-4.png" alt="Calvin Klein Logo" />
+          </div>
+          <div class="logo-item">
+            <img src="images/brand-logo-5.png" alt="Denim Logo" />
+          </div>
         </div>
-        <div class="logo-item">
-          <img src="images/brand-logo-2.png" alt="Louis Vuitton Logo" />
+      </section>
+
+      <!-- Deals Section -->
+      <section class="deals-section" id="deals-section">
+        <div class="container deals">
+          <div class="deal-content">
+            <h2>Deals Of The Month</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Scelerisque duis ultrices sollicitudin aliquam sem.
+            </p>
+            <button aria-label="Buy Now">Buy Now</button>
+            <div class="countdown">
+              <h3>Hurry, Before It's Too Late!</h3>
+              <div class="time-units">
+                <div class="time-unit">
+                  <div><p>02</p></div>
+                  <p>Days</p>
+                </div>
+                <div class="time-unit">
+                  <div><p>06</p></div>
+                  <p>Hr</p>
+                </div>
+                <div class="time-unit">
+                  <div><p>05</p></div>
+                  <p>Mins</p>
+                </div>
+                <div class="time-unit">
+                  <div><p>30</p></div>
+                  <p>Sec</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="deals-slide-show">
+            <div class="deal-images">
+              <button class="arrows" aria-label="Previous Deal">&lt;</button>
+              <div class="deal-image">
+                <img src="images/deals-1.png" alt="Deal 1" />
+                <div class="deal-discount">
+                  <p>01 — Spring Sale</p>
+                  <p>30% OFF</p>
+                </div>
+              </div>
+              <button class="arrows" aria-label="Next Deal">&gt;</button>
+            </div>
+            <div class="radio-buttons">
+              <input type="radio" name="deal" id="deal1" checked />
+              <label for="deal1"></label>
+              <input type="radio" name="deal" id="deal2" />
+              <label for="deal2"></label>
+              <input type="radio" name="deal" id="deal3" />
+              <label for="deal3"></label>
+            </div>
+          </div>
         </div>
-        <div class="logo-item">
-          <img src="images/brand-logo-3.png" alt="Prada Logo" />
+      </section>
+
+      <!-- New Arrivals Section -->
+      <section class="new-arrivals-section" id="new-arrivals-section">
+        <div class="container arrivals">
+          <div class="arrival-title">
+            <h2>New Arrivals</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Scelerisque duis ultrices sollicitudin aliquam sem.
+            </p>
+          </div>
+
+          <div class="arrival-categories">
+            <button class="category">Men's Fashion</button>
+            <button class="category">WoMen's Fashion</button>
+            <button class="category">Momen Accessories</button>
+            <button class="category">Men Accessories</button>
+            <button class="category">Discount Deals</button>
+          </div>
+          <div class="arrival-cards">
+            <div class="arrival-card">
+              <img src="images/arrival-1.png" alt="Arrival 1" />
+              <div class="arrival-info">
+                <div class="arrival-product">
+                  <div>
+                    <p class="product-name">Shiny Dress</p>
+                    <p class="brand-name">AI Karam</p>
+                  </div>
+                  <div class="star-rating">
+                    <span>★★★★★</span>
+                  </div>
+                </div>
+                <p class="reviews">(4.1k) Customer Reviews</p>
+                <div class="arrival-price">
+                  <p class="price">$95.50</p>
+                  <p class="stock-state">Almost Sold Out</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="arrival-card">
+              <img src="images/arrival-1.png" alt="Arrival 1" />
+              <div class="arrival-info">
+                <div class="arrival-product">
+                  <div>
+                    <p class="product-name">Shiny Dress</p>
+                    <p class="brand-name">AI Karam</p>
+                  </div>
+                  <div class="star-rating">
+                    <span>★</span><span>★</span><span>★</span><span>★</span
+                    ><span>★</span>
+                  </div>
+                </div>
+                <p class="reviews">(4.1k) Customer Reviews</p>
+                <div class="arrival-price">
+                  <p class="price">$95.50</p>
+                  <p class="stock-state">Almost Sold Out</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="arrival-card">
+              <img src="images/arrival-1.png" alt="Arrival 1" />
+              <div class="arrival-info">
+                <div class="arrival-product">
+                  <div>
+                    <p class="product-name">Shiny Dress</p>
+                    <p class="brand-name">AI Karam</p>
+                  </div>
+                  <div class="star-rating">
+                    <span>★</span><span>★</span><span>★</span><span>★</span
+                    ><span>★</span>
+                  </div>
+                </div>
+                <p class="reviews">(4.1k) Customer Reviews</p>
+                <div class="arrival-price">
+                  <p class="price">$95.50</p>
+                  <p class="stock-state">Almost Sold Out</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="arrival-card">
+              <img src="images/arrival-1.png" alt="Arrival 1" />
+              <div class="arrival-info">
+                <div class="arrival-product">
+                  <div>
+                    <p class="product-name">Shiny Dress</p>
+                    <p class="brand-name">AI Karam</p>
+                  </div>
+                  <div class="star-rating">
+                    <span>★</span><span>★</span><span>★</span><span>★</span
+                    ><span>★</span>
+                  </div>
+                </div>
+                <p class="reviews">(4.1k) Customer Reviews</p>
+                <div class="arrival-price">
+                  <p class="price">$95.50</p>
+                  <p class="stock-state">Almost Sold Out</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="arrival-card">
+              <img src="images/arrival-1.png" alt="Arrival 1" />
+              <div class="arrival-info">
+                <div class="arrival-product">
+                  <div>
+                    <p class="product-name">Shiny Dress</p>
+                    <p class="brand-name">AI Karam</p>
+                  </div>
+                  <div class="star-rating">
+                    <span>★</span><span>★</span><span>★</span><span>★</span
+                    ><span>★</span>
+                  </div>
+                </div>
+                <p class="reviews">(4.1k) Customer Reviews</p>
+                <div class="arrival-price">
+                  <p class="price">$95.50</p>
+                  <p class="stock-state">Almost Sold Out</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="arrival-card">
+              <img src="images/arrival-1.png" alt="Arrival 1" />
+              <div class="arrival-info">
+                <div class="arrival-product">
+                  <div>
+                    <p class="product-name">Shiny Dress</p>
+                    <p class="brand-name">AI Karam</p>
+                  </div>
+                  <div class="star-rating">
+                    <span>★</span><span>★</span><span>★</span><span>★</span
+                    ><span>★</span>
+                  </div>
+                </div>
+                <p class="reviews">(4.1k) Customer Reviews</p>
+                <div class="arrival-price">
+                  <p class="price">$95.50</p>
+                  <p class="stock-state">Almost Sold Out</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button aria-label="View More">View More</button>
         </div>
-        <div class="logo-item">
-          <img src="images/brand-logo-4.png" alt="Calvin Klein Logo" />
+      </section>
+
+      <!-- Slide -->
+      <section class="slide-section" id="slide-section">
+        <div class="slide">
+          <div class="slide-image">
+            <img src="images/slide.png" alt="Slide" />
+          </div>
+          <div class="slide-content">
+            <p>Women Collection</p>
+            <h2>Peaky Blinders</h2>
+            <h3>DESCRIPTION</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Scelerisque duis ultrices sollicitudin aliquam sem. Consectetur
+              adipiscing elit. Scelerisque duis ultrices sollicitudin aliquam
+              sem
+            </p>
+            <div class="slide-size">
+              <p>Size: <span>M</span></p>
+            </div>
+            <div class="slide-price">
+              <p><span>$100</span>.00</p>
+            </div>
+            <button>Buy Now</button>
+          </div>
         </div>
-        <div class="logo-item">
-          <img src="images/brand-logo-5.png" alt="Denim Logo" />
+      </section>
+
+      <!-- Feature -->
+      <!-- TODO change small logo -->
+      <section class="feature">
+        <div class="container features">
+          <div class="feature-item">
+            <img src="images/feature-1.png" alt="Feature 1" />
+            <div class="feature-info">
+              <h3>High Quality</h3>
+              <p>crafted from top materials</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <img src="images/feature-2.png" alt="Feature 2" />
+            <div class="feature-info">
+              <h3>Warrany Protection</h3>
+              <p>Over 2 years</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <img src="images/feature-3.png" alt="Feature 3" />
+            <div class="feature-info">
+              <h3>Free Shipping</h3>
+              <p>Order over 150 $</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <img src="images/feature-4.png" alt="Feature 4" />
+            <div class="feature-info">
+              <h3>24 / 7 Support</h3>
+              <p>Dedicated support</p>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <!-- Follow Us -->
+      <section class="follow-us-section">
+        <div class="follow">
+          <div class="follow-title">
+            <h2>Follow Us On Instagram</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Scelerisque duis ultrices sollicitudin aliquam sem. Scelerisque
+              duis ultrices sollicitudin
+            </p>
+          </div>
+
+          <div class="follow-images">
+            <div class="social-media">
+              <img src="images/instagram-1.png" alt="Instagram 1" />
+            </div>
+            <div class="social-media">
+              <img src="images/instagram-2.png" alt="Instagram 2" />
+            </div>
+            <div class="social-media">
+              <img src="images/instagram-1.png" alt="Instagram 3" />
+            </div>
+            <div class="social-media">
+              <img src="images/instagram-2.png" alt="Instagram 4" />
+            </div>
+            <div class="social-media">
+              <img src="images/instagram-1.png" alt="Instagram 5" />
+            </div>
+            <div class="social-media">
+              <img src="images/instagram-2.png" alt="Instagram 6" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feedback -->
+      <!-- <section class="feedback-section">
+        <div class="container feedback">
+          <div class="feedback-title">
+            <h2>This Is What Our Customers Say</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Scelerisque duis
+            </p>
+          </div>
+
+          <div class="feedback-cards">
+            <div class="feedback-card left-card">
+              <div class="feedback-image">
+                <img src="images/feedback-1.png" alt="Feedback 1" />
+              </div>
+              <div class="feedback-info">
+                <p class="feedback-comment">
+                  "You won't regret it. I would like to personally thank you for
+                  your outstanding product. Absolutely wonderful!"
+                </p>
+                <span>★★★★★</span>
+                <div class="feedback-separator"></div>
+
+                <p class="feedback-name">James K.</p>
+                <p class="feedback-who">Travelver</p>
+              </div>
+            </div>
+
+            <div class="feedback-card middle-card">
+              <div class="feedback-image">
+                <img src="images/feedback-1.png" alt="Feedback 1" />
+              </div>
+              <div class="feedback-info">
+                <p class="feedback-comment">
+                  "You won't regret it. I would like to personally thank you for
+                  your outstanding product. Absolutely wonderful!"
+                </p>
+                <span>★★★★★</span>
+                <div class="feedback-separator"></div>
+
+                <p class="feedback-name">James K.</p>
+                <p class="feedback-who">Travelver</p>
+              </div>
+            </div>
+
+            <div class="feedback-card right-card">
+              <div class="feedback-image">
+                <img src="images/feedback-1.png" alt="Feedback 1" />
+              </div>
+              <div class="feedback-info">
+                <p class="feedback-comment">
+                  "You won't regret it. I would like to personally thank you for
+                  your outstanding product. Absolutely wonderful!"
+                </p>
+                <span>★★★★★</span>
+                <div class="feedback-separator"></div>
+
+                <p class="feedback-name">James K.</p>
+                <p class="feedback-who">Travelver</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feedback-arrows">
+            <button class="arrow" aria-label="Previous Feedback">&lt;</button>
+            <button class="arrow" aria-label="Next Feedback">&gt;</button>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Subscribe -->
+      <section class="subscribe-section">
+        <div class="container subscribe">
+          <div class="subscribe-image">
+            <img src="images/subscribe-1.png" alt="Subscribe Image 1" />
+          </div>
+          <div class="subscribe-content">
+            <h2>Subscribe To Our Newsletter</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Scelerisque duis ultrices sollicitudin aliquam sem. Scelerisque
+              duis ultrices sollicitudin
+            </p>
+            <div class="subscribe-email">
+              <p>michael@ymail.com</p>
+            </div>
+            <div class="subscribe-button">
+              <button aria-label="Subscribe Now">Subscribe Now</button>
+            </div>
+          </div>
+          <div class="subscribe-image">
+            <img src="images/subscribe-2.png" alt="Subscribe Image 2" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-top">
+          <div class="footer-logo">
+            <img src="images/FASCO.png" alt="Logo" />
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#">Support Center</a></li>
+              <li><a href="#">Invoicing</a></li>
+              <li><a href="#">Contract</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; Copyright © 2025 Xpro . All Rights Reseved.</p>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
