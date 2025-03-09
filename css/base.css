@@ -1,0 +1,540 @@
+@font-face {
+  font-family: "Digital Numbers Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Digital Numbers Regular"),
+    url("../fonts/DigitalNumbers-Regular.woff") format("woff");
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+section {
+  padding: 20px 0;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 44px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  font-size: 16px;
+  font-weight: 200;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 1em;
+}
+
+/* Side */
+.slide-section {
+  background: #fafafa;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide .slide-image {
+  flex: 1;
+}
+
+.slide .slide-content {
+  flex: 1;
+  background: #dadada;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 10px 20px;
+}
+
+.slide-content h2 {
+  font-family: "Volkhov", sans-serif;
+  font-size: 16px;
+  color: #484848;
+}
+
+.slide-content h3 {
+  border-bottom: 1px solid #484848;
+  font-size: 14px;
+  max-width: 90px;
+}
+
+.slide-content p {
+  font-size: 10px;
+  color: #767676;
+}
+
+.slide-content .slide-size span {
+  font-size: 12px;
+  background: #000;
+  border-radius: 8px;
+  color: #fff;
+  padding: 0 15px;
+  margin-left: 10px;
+}
+
+.slide-content .slide-price p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+}
+
+.slide-content .slide-price span {
+  font-size: 14px;
+}
+
+.slide-content button {
+  font-size: 12px;
+  padding: 5px 5px;
+  max-width: 150px;
+}
+
+/* Feature */
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+  padding: 20px 0;
+  box-shadow: 0px 20px 52.3px rgba(68, 68, 68, 0.04),
+    0px 42.36px 30.62px rgba(68, 68, 68, 0.07),
+    0px 25.18px 16.65px rgba(68, 68, 68, 0.06),
+    0px 13.07px 8.5px rgba(68, 68, 68, 0.05),
+    0px 5.3px 4.26px rgba(68, 68, 68, 0.039),
+    0px 1.21px 2.06px rgba(68, 68, 68, 0.024);
+}
+
+.features .feature-item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.features .feature-item img {
+  max-width: 30px;
+  padding: 5px 0;
+}
+
+.feature-item h3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #484848;
+  max-width: 100px;
+}
+
+.feature-item p {
+  font-size: 12px;
+  color: #484848;
+  max-width: 100px;
+}
+
+/* Follow us */
+.follow {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.follow-title h2 {
+  font-family: "Volkhov", sans-serif;
+  font-size: 20px;
+  color: #484848;
+}
+
+.follow-title p {
+  font-size: 14px;
+  color: #8a8a8a;
+}
+
+.follow-images {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+}
+
+/* Subscribe */
+.subscribe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 20px; */
+  text-align: center;
+}
+
+.subscribe-image {
+  flex: 1;
+}
+
+.subscribe-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.subscribe-content h2 {
+  font-family: "Volkhov", sans-serif;
+  font-size: 18px;
+  color: #484848;
+}
+
+.subscribe-content p {
+  font-size: 14px;
+  color: #8a8a8a;
+}
+
+.subscribe-content .subscribe-email {
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 0 20px;
+  box-shadow: 0px 163px 80px rgba(0, 0, 0, 0.04),
+    0px 105.65px 46.85px rgba(0, 0, 0, 0.03),
+    0px 62.79px 25.48px rgba(0, 0, 0, 0.0243),
+    0px 32.6px 13px rgba(0, 0, 0, 0.02), 0px 13.28px 6.52px rgba(0, 0, 0, 0.15),
+    0px 3.02px 3.15px rgba(0, 0, 0, 0.09);
+}
+
+.subscribe-content .subscribe-button {
+  background-color: #000;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+/* Footer */
+footer {
+  color: #333;
+  padding: 10px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footer-top {
+  margin: 10px;
+}
+
+.footer-logo img {
+  width: 60px;
+  height: auto;
+}
+
+.footer-links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-links a {
+  display: block;
+  color: #484848;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+}
+
+/*
+  Tablet: 760 and up
+*/
+@media screen and (min-width: 760px) {
+  .container {
+    width: 750px;
+    padding: 2em 0 0em 0;
+    margin: 0 auto;
+  }
+
+  /* Slider */
+  .slide .slide-content {
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .slide-content h2 {
+    font-size: 20px;
+  }
+
+  .slide-content h3 {
+    font-size: 16px;
+    max-width: 100px;
+  }
+
+  .slide-content p {
+    font-size: 12px;
+    line-height: 2;
+  }
+
+  .slide-content .slide-size span {
+    font-size: 14px;
+  }
+
+  .slide-content .slide-price p {
+    font-size: 12px;
+  }
+
+  .slide-content .slide-price span {
+    font-size: 16px;
+  }
+
+  .slide-content button {
+    font-size: 14px;
+    max-width: 180px;
+  }
+
+  /* Feature */
+  .features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .features .feature-item {
+    gap: 5px;
+    align-items: center;
+  }
+
+  .features .feature-item img {
+    width: 35px;
+  }
+
+  .feature-item h3 {
+    font-size: 14px;
+    max-width: 200px;
+  }
+
+  .feature-item p {
+    font-size: 12px;
+    max-width: 300px;
+  }
+
+  /* Subscribe */
+  .subscribe-content h2 {
+    font-size: 30px;
+  }
+
+  /* Footer */
+  .footer-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .footer-logo img {
+    width: 90px;
+    height: auto;
+  }
+
+  .footer-links ul {
+    gap: 20px;
+  }
+}
+
+/*
+  1200px and up
+*/
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1100px;
+    margin: 0 auto;
+  }
+}
+
+/*
+  Desktop: 1600px and up
+*/
+@media screen and (min-width: 1600px) {
+  .container {
+    margin: 0 auto;
+    padding: 3em 0 0em 0;
+    width: 1500px;
+  }
+
+  /* Deals */
+  .deal-content {
+    max-width: 100%;
+    align-items: flex-start;
+  }
+
+  /* Slide */
+  .slide .slide-content {
+    gap: 20px;
+    padding: 60px;
+  }
+
+  .slide-content h2 {
+    font-size: 46px;
+  }
+
+  .slide-content h3 {
+    font-size: 16px;
+    max-width: 101px;
+  }
+
+  .slide-content p {
+    font-size: 16px;
+    line-height: 2.6;
+  }
+
+  .slide-content .slide-size span {
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px 30px;
+  }
+
+  .slide-content .slide-price p {
+    font-size: 24px;
+  }
+
+  .slide-content .slide-price span {
+    font-size: 28px;
+  }
+
+  .slide-content button {
+    font-size: 16px;
+    padding: 10px 30px;
+    max-width: 207px;
+  }
+
+  /* Feature */
+  .features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+  }
+
+  .features .feature-item {
+    gap: 10px;
+    align-items: center;
+  }
+
+  .features .feature-item img {
+    width: 35px;
+  }
+
+  .feature-item h3 {
+    font-size: 18px;
+    max-width: 200px;
+  }
+
+  .feature-item p {
+    font-size: 16px;
+    max-width: 300px;
+  }
+
+  /* Follow */
+  .follow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+  }
+
+  .follow-title h2 {
+    font-family: "Volkhov", sans-serif;
+    font-size: 46px;
+    color: #484848;
+  }
+
+  .follow-title p {
+    font-size: 16px;
+    line-height: 2.6;
+    color: #8a8a8a;
+    max-width: 614px;
+  }
+
+  .follow-images {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+  }
+
+  /* Subscribe */
+  .subscribe {
+    align-items: center;
+    padding: 40px 0;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .subscribe-content {
+    gap: 20px;
+  }
+
+  .subscribe-content h2 {
+    font-size: 46px;
+  }
+
+  .subscribe-content p {
+    line-height: 2.6;
+    font-size: 16px;
+  }
+
+  .subscribe-content .subscribe-email {
+    padding: 0 20px;
+    line-height: 2.6;
+    font-size: 22px;
+  }
+
+  .subscribe-content .subscribe-button {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+
+  /* Footer */
+  .footer-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .footer-logo img {
+    width: 105px;
+    height: auto;
+  }
+
+  .footer-links ul {
+    gap: 40px;
+  }
+}

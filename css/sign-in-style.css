@@ -1,0 +1,180 @@
+/* Sign In.html */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* mean */
+  height: 100vh;
+}
+
+.sign-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.login-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.sign-logo {
+  width: 60px;
+}
+
+.form-title h2 {
+  font-family: "Volkhov", sans-serif;
+  font-size: 25px;
+  margin: 10px auto;
+}
+
+.sign-in-options img {
+  max-width: 30px;
+}
+
+.sign-in-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.sign-in-options div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 15px;
+  border: solid 1px #5b86e5;
+  background-color: #fff;
+  color: #000;
+  border-radius: 8px;
+  height: 30px;
+}
+
+.or-text {
+  margin: 5px 0;
+  font-size: 25px;
+  font-weight: bold;
+  color: #838383;
+}
+
+form input {
+  width: 90%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #9d9d9d;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* text-align: left; */
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+.signin-btn {
+  max-width: 90%;
+  background-color: #000;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.15);
+  margin-top: 30px;
+}
+
+.register-btn {
+  max-width: 90%;
+  background-color: white;
+  color: #5b86e5;
+  border: solid 1px #5b86e5;
+  border-radius: 8px;
+}
+
+.forgot-password {
+  display: block;
+  margin-top: 10px;
+  color: #4285f4;
+  text-decoration: none;
+  align-self: self-end;
+}
+
+.terms {
+  margin-top: 20px;
+  align-self: self-end;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/*
+  Tablet: 760 and up
+*/
+@media screen and (min-width: 760px) {
+  .sign-in {
+    flex-direction: row;
+  }
+
+  .login-img {
+    max-height: 550px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .sign-in-options {
+    padding: 0 40px;
+  }
+
+  .google-btn img,
+  .email-btn img {
+    max-width: 36px;
+  }
+
+  form input {
+    width: 80%;
+    padding: 5px;
+  }
+
+  .signin-btn,
+  .register-btn {
+    max-width: 70%;
+  }
+}
+/* 1200 and up */
+@media screen and (min-width: 1200px) {
+  .sign-in-options {
+    flex-direction: row;
+  }
+
+  .or-text {
+    margin: 20px auto;
+  }
+
+  .form-section {
+    gap: 10px;
+  }
+}
+
+/*
+  Desktop: 1700px and up
+*/
+@media screen and (min-width: 1600px) {
+}
