@@ -16,7 +16,7 @@ body {
   padding: 20px;
 }
 
-.login-img {
+.signin-img {
   width: 100%;
   max-height: 300px;
   object-fit: contain;
@@ -50,9 +50,9 @@ body {
   align-items: center;
   gap: 5px;
   padding: 5px 15px;
-  border: solid 1px #5b86e5;
-  background-color: #fff;
-  color: #000;
+  border: solid 1px var(--blue);
+  background-color: var(--white-color);
+  color: var(--black-color);
   border-radius: 8px;
   height: 30px;
 }
@@ -61,14 +61,15 @@ body {
   margin: 5px 0;
   font-size: 25px;
   font-weight: bold;
-  color: #838383;
+  color: var(--grey-color);
 }
 
 form input {
   width: 90%;
+  height: 40px;
   padding: 10px;
   border: none;
-  border-bottom: 1px solid #9d9d9d;
+  border-bottom: 1px solid var(--secondary-black);
 }
 
 .form-section {
@@ -91,8 +92,8 @@ form button {
 
 .signin-btn {
   max-width: 90%;
-  background-color: #000;
-  color: white;
+  background-color: var(--black-color);
+  color: var(--white-color);
   border-radius: 8px;
   box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.15);
   margin-top: 30px;
@@ -100,16 +101,16 @@ form button {
 
 .register-btn {
   max-width: 90%;
-  background-color: white;
-  color: #5b86e5;
-  border: solid 1px #5b86e5;
+  background-color: var(--white-color);
+  color: var(--blue);
+  border: solid 1px var(--blue);
   border-radius: 8px;
 }
 
 .forgot-password {
   display: block;
   margin-top: 10px;
-  color: #4285f4;
+  color: var(--secondary-blue);
   text-decoration: none;
   align-self: self-end;
 }
@@ -131,7 +132,7 @@ form button {
     flex-direction: row;
   }
 
-  .login-img {
+  .signin-img {
     max-height: 550px;
   }
 

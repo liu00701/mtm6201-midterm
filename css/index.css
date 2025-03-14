@@ -6,15 +6,15 @@ nav ul li {
 
 nav ul li a {
   display: block;
-  color: #000;
+  color: var(--black-color);
   font-size: 16px;
   /* use block to let link full width */
   padding: 4px;
 }
 
 nav ul li .sign-up {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--black-color);
+  color: var(--white-color);
   border-radius: 10px;
   box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.15);
 }
@@ -90,9 +90,9 @@ nav ul li .sign-up {
 }
 
 .hero-content a {
-  background-color: #000;
+  background-color: var(--black-color);
   border-radius: 10px;
-  color: white;
+  color: var(--white-color);
   font-weight: 500;
   padding: 10px 30px;
   margin-bottom: 10px;
@@ -122,7 +122,11 @@ nav ul li .sign-up {
 
 /* Deals */
 .deals-section {
-  background: linear-gradient(to bottom, #ffffff 0%, #fafafa 100%);
+  background: linear-gradient(
+    to bottom,
+    var(--white-color) 0%,
+    var(--third-grey) 100%
+  );
 }
 
 .deals {
@@ -174,13 +178,13 @@ nav ul li .sign-up {
   max-width: 30px;
   border-radius: 10px;
   padding: 12px;
-  background-color: #fff;
+  background-color: var(--white-color);
 }
 
 .countdown .time-unit div p {
   font-family: "Digital Numbers Regular";
   font-size: 20px;
-  color: #000;
+  color: var(--black-color);
 }
 
 .deal-images {
@@ -206,12 +210,12 @@ nav ul li .sign-up {
   justify-content: center;
   align-items: center;
   background: rgba(255, 255, 255, 1);
-  color: #000;
+  color: var(--black-color);
 }
 
 .arrows {
-  background-color: #fff;
-  color: #000;
+  background-color: var(--white-color);
+  color: var(--black-color);
   border-radius: 50%;
   width: 35px;
   height: 35px;
@@ -236,13 +240,13 @@ nav ul li .sign-up {
   width: 10px;
   height: 10px;
   margin: 0 5px;
-  background: #ccc;
+  background: var(--forth-grey);
   border-radius: 50%;
   cursor: pointer;
 }
 
 .radio-buttons input:checked + label {
-  background: #333;
+  background: var(--black-color);
 }
 
 /* Arrivals */
@@ -265,16 +269,16 @@ nav ul li .sign-up {
 }
 
 .arrival-categories button {
-  background-color: #fafafa;
-  color: #8a8a8a;
+  background-color: var(--third-grey);
+  color: var(--grey-color);
   border-radius: 10px;
   margin: 5px;
   box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.15);
 }
 
 .arrival-categories button:nth-child(2) {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--black-color);
+  color: var(--white-color);
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
 }
 
@@ -288,7 +292,7 @@ nav ul li .sign-up {
 
 .arrival-card {
   padding: 5px 10px 15px 10px;
-  background-color: #fff;
+  background-color: var(--white-color);
   border-radius: 10px;
 }
 
@@ -306,17 +310,17 @@ nav ul li .sign-up {
 .arrival-card .product-name {
   font-weight: bold;
   font-size: 18px;
-  color: #333;
+  color: var(--secondary-black);
 }
 
 .arrival-card .brand-name {
   font-size: 16px;
-  color: #8a8a8a;
+  color: var(--grey-color);
   line-height: 1.2;
 }
 
 .arrival-card .star-rating span {
-  color: #ffc107;
+  color: var(--yellow);
   font-size: 20px;
 }
 
@@ -337,7 +341,7 @@ nav ul li .sign-up {
 }
 
 .arrival-card .stock-state {
-  color: #ff4646;
+  color: var(--red);
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.01em;
@@ -349,8 +353,9 @@ nav ul li .sign-up {
 
 /* Feedback */
 .feedback-section {
-  background: #fafafa;
+  background: var(--third-grey);
 }
+
 .feedback-title {
   text-align: center;
 }
@@ -365,12 +370,12 @@ nav ul li .sign-up {
 .feedback h2 {
   font-family: "Volkhov", sans-serif;
   font-size: 24px;
-  color: #484848;
+  color: var(--secondary-black);
 }
 
 .feedback .feedback-title p {
   font-size: 16px;
-  color: #8a8a8a;
+  color: var(--grey-color);
   margin-bottom: 10px;
 }
 
@@ -383,7 +388,7 @@ nav ul li .sign-up {
 .feedback .feedback-card {
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: var(--white-color);
   transition: transform 0.3s ease, width 0.3s ease;
   padding: 10px 10px;
 }
@@ -423,24 +428,24 @@ nav ul li .sign-up {
 .feedback .feedback-comment {
   font-size: 12px;
   line-height: 1;
-  color: #484848;
+  color: var(--secondary-black);
 }
 
 .feedback span {
-  color: #ffc107;
+  color: var(--yellow);
   font-size: 12px;
 }
 
 .feedback .feedback-name {
   font-family: "Volkhov", sans-serif;
   font-size: 14px;
-  color: #484848;
-  border-top: 1px solid #5d5d5d;
+  color: var(--secondary-black);
+  border-top: 1px solid var(--secondary-black);
 }
 
 .feedback .feedback-who {
   font-size: 14px;
-  color: #484848;
+  color: var(--secondary-black);
 }
 
 .feedback .feedback-arrows {
@@ -450,8 +455,8 @@ nav ul li .sign-up {
 }
 
 .feedback .arrow {
-  background-color: #fff;
-  color: #b6b6b6;
+  background-color: var(--white-color);
+  color: var(--grey-color);
   border-radius: 50%;
   width: 48px;
   height: 48px;
@@ -463,7 +468,7 @@ nav ul li .sign-up {
 }
 
 .feedback .arrow:last-child {
-  color: #000;
+  color: var(--black-color);
 }
 
 /*
@@ -489,6 +494,7 @@ Tablet: 760 and up
     padding: 10px 30px;
   }
 
+  /* Hero */
   .hero {
     display: flex;
     justify-content: space-between;
@@ -496,6 +502,23 @@ Tablet: 760 and up
     padding: 40px 0;
     gap: 40px;
     text-align: center;
+  }
+
+  .hero-image {
+    height: 756px;
+    width: 392px;
+    background-color: var(--forth-grey);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-height: 570px;
   }
 
   .hero-content {
@@ -589,23 +612,6 @@ Desktop: 1200px and up
     align-items: center;
     gap: 40px;
     font-size: 16px;
-  }
-
-  .hero-image {
-    height: 756px;
-    width: 392px;
-    background-color: #e0e0e0;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-  }
-
-  .hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    max-height: 570px;
   }
 
   /* Deals */

@@ -1,3 +1,17 @@
+:root {
+  --black-color: #000;
+  --white-color: #fff;
+  --secondary-black: #484848;
+  --grey-color: #8a8a8a;
+  --secondary-grey: #767676;
+  --third-grey: #fafafa;
+  --forth-grey: #e0e0e0;
+  --yellow: #ffc107;
+  --red: #ff4646;
+  --blue: #5b86e5;
+  --secondary-blue: #4285f4;
+}
+
 @font-face {
   font-family: "Digital Numbers Regular";
   font-style: normal;
@@ -41,8 +55,8 @@ a {
 button {
   font-size: 16px;
   font-weight: 200;
-  background-color: #000;
-  color: #fff;
+  background-color: var(--black-color);
+  color: var(--white-color);
   border: none;
   padding: 10px 30px;
   border-radius: 10px;
@@ -56,7 +70,7 @@ button {
 
 /* Side */
 .slide-section {
-  background: #fafafa;
+  background: var(--third-grey);
 }
 
 .slide {
@@ -82,7 +96,7 @@ button {
 .slide-content h2 {
   font-family: "Volkhov", sans-serif;
   font-size: 16px;
-  color: #484848;
+  color: var(--secondary-black);
 }
 
 .slide-content h3 {
@@ -93,14 +107,14 @@ button {
 
 .slide-content p {
   font-size: 10px;
-  color: #767676;
+  color: var(--secondary-grey);
 }
 
 .slide-content .slide-size span {
   font-size: 12px;
-  background: #000;
+  background: var(--black-color);
   border-radius: 8px;
-  color: #fff;
+  color: var(--white-color);
   padding: 0 15px;
   margin-left: 10px;
 }
@@ -108,7 +122,7 @@ button {
 .slide-content .slide-price p {
   font-size: 12px;
   font-weight: 400;
-  color: #000;
+  color: var(--black-color);
 }
 
 .slide-content .slide-price span {
@@ -117,7 +131,6 @@ button {
 
 .slide-content button {
   font-size: 12px;
-  padding: 5px 5px;
   max-width: 150px;
 }
 
@@ -150,13 +163,13 @@ button {
 .feature-item h3 {
   font-size: 14px;
   font-weight: 400;
-  color: #484848;
+  color: var(--secondary-black);
   max-width: 100px;
 }
 
 .feature-item p {
   font-size: 12px;
-  color: #484848;
+  color: var(--secondary-black);
   max-width: 100px;
 }
 
@@ -169,12 +182,12 @@ button {
 .follow-title h2 {
   font-family: "Volkhov", sans-serif;
   font-size: 20px;
-  color: #484848;
+  color: var(--secondary-black);
 }
 
 .follow-title p {
   font-size: 14px;
-  color: #8a8a8a;
+  color: var(--grey-color);
 }
 
 .follow-images {
@@ -208,16 +221,16 @@ button {
 .subscribe-content h2 {
   font-family: "Volkhov", sans-serif;
   font-size: 18px;
-  color: #484848;
+  color: var(--secondary-black);
 }
 
 .subscribe-content p {
   font-size: 14px;
-  color: #8a8a8a;
+  color: var(--grey-color);
 }
 
 .subscribe-content .subscribe-email {
-  color: #8a8a8a;
+  color: var(--grey-color);
   font-size: 14px;
   padding: 0 20px;
   box-shadow: 0px 163px 80px rgba(0, 0, 0, 0.04),
@@ -228,16 +241,16 @@ button {
 }
 
 .subscribe-content .subscribe-button {
-  background-color: #000;
+  background-color: var(--black-color);
   border-radius: 10px;
   font-size: 14px;
 }
 
 /* Footer */
 footer {
-  color: #333;
+  color: var(--secondary-black);
   padding: 10px;
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid var(--forth-grey);
 }
 
 .footer-top {
@@ -259,7 +272,7 @@ footer {
 
 .footer-links a {
   display: block;
-  color: #484848;
+  color: var(--secondary-black);
   text-decoration: none;
   font-size: 16px;
 }
@@ -472,13 +485,13 @@ footer {
   .follow-title h2 {
     font-family: "Volkhov", sans-serif;
     font-size: 46px;
-    color: #484848;
+    color: var(--secondary-black);
   }
 
   .follow-title p {
     font-size: 16px;
     line-height: 2.6;
-    color: #8a8a8a;
+    color: var(--grey-color);
     max-width: 614px;
   }
 

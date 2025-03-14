@@ -18,11 +18,24 @@
     <main role="main">
       <div class="sign-in">
         <div class="image-section">
-          <img src="images/sign-in.png" alt="Login Image" class="login-img" />
+          <picture>
+            <source
+              srcset="images/sign-in-small.png"
+              media="(max-width: 760px)"
+            />
+
+            <img
+              src="images/sign-in.png"
+              alt="Login Image"
+              class="signin-img"
+            />
+          </picture>
         </div>
         <div class="form-section">
           <div class="form-title">
-            <img src="images/FASCO.png" alt="Logo" class="sign-logo" />
+            <a href="/index.html">
+              <img src="images/FASCO.png" alt="Logo" class="sign-logo" />
+            </a>
             <h2>Sign In To Fasco</h2>
           </div>
 

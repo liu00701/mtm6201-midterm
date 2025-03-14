@@ -6,16 +6,16 @@ nav ul li {
 
 nav ul li a {
   display: block;
-  color: #000;
+  color: var(--black-color);
   font-size: 16px;
   padding: 4px;
 }
 
-nav ul li a:hover {
-  background-color: #000;
-  color: #fff;
-  border-radius: 8px;
-}
+/* nav ul li a:hover {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  border-radius: 4px;
+} */
 
 nav ul img {
   padding: 0 5px;
@@ -62,9 +62,9 @@ nav ul img {
 
 /* Size filter */
 .size-buttons button {
-  background-color: white;
-  border: 1px solid #8a8a8a;
-  color: #8a8a8a;
+  background-color: var(--white-color);
+  border: 1px solid var(--grey-color);
+  color: var(--grey-color);
   border-radius: 5px;
   padding: 5px 10px;
   margin-top: 5px;
@@ -73,8 +73,8 @@ nav ul img {
 }
 
 .size-buttons button:hover {
-  background-color: black;
-  color: white;
+  background-color: var(--black-color);
+  color: var(--white-color);
 }
 
 /* Color filter */
@@ -118,8 +118,8 @@ label {
 }
 
 .tag:hover {
-  background-color: black;
-  color: white;
+  background-color: var(--black-color);
+  color: var(--white-color);
 }
 
 /* Main Section */
@@ -150,13 +150,6 @@ label {
   gap: 20px;
 }
 
-.product-card {
-  /* position: relative; */
-  /* background-color: white; */
-  /* border: 1px solid lightgray; */
-  /* text-align: center; */
-}
-
 .product-card img {
   object-fit: cover;
 }
@@ -176,11 +169,11 @@ label {
 }
 
 input[type="radio"]:first-child {
-  accent-color: black;
+  accent-color: var(--black-color);
 }
 
 input[type="radio"]:last-child {
-  accent-color: red;
+  accent-color: var(--red);
 }
 
 .page {
@@ -196,7 +189,7 @@ input[type="radio"]:last-child {
 }
 
 .page a {
-  color: #000;
+  color: var(--black-color);
 }
 
 .page a.page-number {
@@ -209,7 +202,7 @@ input[type="radio"]:last-child {
 }
 
 .page a.active {
-  background-color: #f3f3f3;
+  background-color: var(--forth-grey);
 }
 
 @media screen and (min-width: 760px) {
