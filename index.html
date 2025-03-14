@@ -17,10 +17,20 @@
   <body>
     <header>
       <div class="container">
-        <nav>
+        <nav aria-label="Main Navigation">
           <div class="logo">
-            <img src="images/FASCO.png" alt="FASCO Logo" />
+            <picture>
+              <!-- Small screens (up to 760px) -->
+              <source
+                srcset="images/FASCO-small.png"
+                media="(max-width: 760px)"
+              />
+
+              <!-- Large screens-->
+              <img src="images/FASCO.png" alt="FASCO Logo" />
+            </picture>
           </div>
+
           <ul>
             <li><a href="#home-section">Home</a></li>
             <li><a href="#deals-section">Deals</a></li>
@@ -34,7 +44,7 @@
     </header>
     <main>
       <!-- Hero Section -->
-      <section class="home-section" id="deals-section">
+      <section class="home-section" id="home-section">
         <div class="container hero">
           <div class="hero-image">
             <img src="images/hero-1.png" alt="Hero Image 1" />
@@ -44,9 +54,7 @@
             <h1>ULTIMATE</h1>
             <h2>SALE</h2>
             <p>NEW COLLECTION</p>
-            <a href="shop.html">
-              <button aria-label="Shop Now">Shop Now</button>
-            </a>
+            <a href="shop.html"> Shop Now </a>
             <img src="images/hero-4.png" alt="Hero Image 4" />
           </div>
           <div class="hero-image">
@@ -56,26 +64,53 @@
       </section>
 
       <!-- Brand Logos Section -->
-      <!-- TODO change small logo -->
-      <section class="brand-logos-section">
-        <div class="container brand-logos">
-          <div class="logo-item">
+      <div class="container brand-logos">
+        <div class="logo-item">
+          <picture>
+            <source
+              srcset="images/brand-logo-1-small.png"
+              media="(max-width: 760px)"
+            />
             <img src="images/brand-logo-1.png" alt="Chanel Logo" />
-          </div>
-          <div class="logo-item">
-            <img src="images/brand-logo-2.png" alt="Louis Vuitton Logo" />
-          </div>
-          <div class="logo-item">
-            <img src="images/brand-logo-3.png" alt="Prada Logo" />
-          </div>
-          <div class="logo-item">
-            <img src="images/brand-logo-4.png" alt="Calvin Klein Logo" />
-          </div>
-          <div class="logo-item">
-            <img src="images/brand-logo-5.png" alt="Denim Logo" />
-          </div>
+          </picture>
         </div>
-      </section>
+        <div class="logo-item">
+          <picture>
+            <source
+              srcset="images/brand-logo-2-small.png"
+              media="(max-width: 760px)"
+            />
+            <img src="images/brand-logo-2.png" alt="Louis Vuitton Logo" />
+          </picture>
+        </div>
+        <div class="logo-item">
+          <picture>
+            <source
+              srcset="images/brand-logo-3-small.png"
+              media="(max-width: 760px)"
+            />
+            <img src="images/brand-logo-3.png" alt="Prada Logo" />
+          </picture>
+        </div>
+        <div class="logo-item">
+          <picture>
+            <source
+              srcset="images/brand-logo-4-small.png"
+              media="(max-width: 760px)"
+            />
+            <img src="images/brand-logo-4.png" alt="Calvin Klein Logo" />
+          </picture>
+        </div>
+        <div class="logo-item">
+          <picture>
+            <source
+              srcset="images/brand-logo-5-small.png"
+              media="(max-width: 760px)"
+            />
+            <img src="images/brand-logo-5.png" alt="Denim Logo" />
+          </picture>
+        </div>
+      </div>
 
       <!-- Deals Section -->
       <section class="deals-section" id="deals-section">
@@ -113,7 +148,14 @@
             <div class="deal-images">
               <button class="arrows" aria-label="Previous Deal">&lt;</button>
               <div class="deal-image">
-                <img src="images/deals-1.png" alt="Deal 1" />
+                <picture>
+                  <source
+                    srcset="images/deals-1-small.png"
+                    media="(max-width: 760px)"
+                  />
+                  <img src="images/deals-1.png" alt="Deal 1" />
+                </picture>
+
                 <div class="deal-discount">
                   <p>01 — Spring Sale</p>
                   <p>30% OFF</p>
@@ -282,7 +324,13 @@
       <section class="slide-section" id="slide-section">
         <div class="slide">
           <div class="slide-image">
-            <img src="images/slide.png" alt="Slide" />
+            <picture>
+              <source
+                srcset="images/slide-small.png"
+                media="(max-width: 760px)"
+              />
+              <img src="images/slide.png" alt="Slide" />
+            </picture>
           </div>
           <div class="slide-content">
             <p>Women Collection</p>
@@ -447,7 +495,13 @@
       <section class="subscribe-section">
         <div class="container subscribe">
           <div class="subscribe-image">
-            <img src="images/subscribe-1.png" alt="Subscribe Image 1" />
+            <picture>
+              <source
+                srcset="images/subscribe-1-small.png"
+                media="(max-width: 760px)"
+              />
+              <img src="images/subscribe-1.png" alt="Subscribe Image 1" />
+            </picture>
           </div>
           <div class="subscribe-content">
             <h2>Subscribe To Our Newsletter</h2>
@@ -464,7 +518,13 @@
             </div>
           </div>
           <div class="subscribe-image">
-            <img src="images/subscribe-2.png" alt="Subscribe Image 2" />
+            <picture>
+              <source
+                srcset="images/subscribe-2-small.png"
+                media="(max-width: 760px)"
+              />
+              <img src="images/subscribe-2.png" alt="Subscribe Image 2" />
+            </picture>
           </div>
         </div>
       </section>

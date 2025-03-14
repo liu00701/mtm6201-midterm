@@ -6,7 +6,6 @@ nav ul li {
 
 nav ul li a {
   display: block;
-  text-decoration: none;
   color: #000;
   font-size: 16px;
   padding: 4px;
@@ -26,6 +25,7 @@ nav ul img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5px;
 }
 
 .toolbar img {
@@ -36,6 +36,10 @@ nav ul img {
 .title-section {
   font-family: "Volkhov", sans-serif;
   text-align: center;
+}
+
+.title-section h2 {
+  font-size: 18px;
 }
 
 /* Sidebar Styles */
@@ -154,9 +158,7 @@ label {
 }
 
 .product-card img {
-  max-width: 302;
-  max-height: 402;
-  /* object-fit: cover; */
+  object-fit: cover;
 }
 
 .product-card h3 {
@@ -195,7 +197,6 @@ input[type="radio"]:last-child {
 
 .page a {
   color: #000;
-  text-decoration: none;
 }
 
 .page a.page-number {
@@ -241,5 +242,9 @@ input[type="radio"]:last-child {
 
   .products {
     width: 75%;
+  }
+
+  .title-section h2 {
+    font-size: 24px;
   }
 }
