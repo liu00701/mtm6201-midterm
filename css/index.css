@@ -102,9 +102,9 @@ nav ul li .sign-up {
 
 .deals {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -113,7 +113,7 @@ nav ul li .sign-up {
   flex-direction: column;
   gap: 10px;
   align-items: center;
-  max-width: 80%;
+  max-width: 50%;
 }
 
 .deals h2 {
@@ -546,14 +546,14 @@ Tablet: 760 and up
     padding: 40px 0;
   }
 
+  .deals h2 {
+    font-size: 30px;
+  }
+
   .deal-content {
     align-items: center;
     gap: 20px;
-    max-width: 80%;
-  }
-
-  .deals h2 {
-    font-size: 30px;
+    max-width: 50%;
   }
 
   .countdown {
@@ -591,18 +591,23 @@ Desktop: 1200px and up
     gap: 40px;
     font-size: 16px;
   }
+  /* Deals */
+  .deals {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .deal-content {
+    align-items: flex-start;
+  }
 }
 
 /*
 Desktop: 1600px and up
 */
 @media screen and (min-width: 1600px) {
-  /* Deals */
-  .deal-content {
-    max-width: 100%;
-    align-items: flex-start;
-  }
-
   /* Arrivals */
   .arrivals h2 {
     font-size: 46px;
@@ -671,5 +676,3 @@ Desktop: 1600px and up
     font-size: 16px;
   }
 }
-
-/* use region markers to auto fold unfocused css sections. Need a plugin for VSC. */

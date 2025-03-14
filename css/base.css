@@ -389,12 +389,6 @@ footer {
     width: 1500px;
   }
 
-  /* Deals */
-  .deal-content {
-    max-width: 100%;
-    align-items: flex-start;
-  }
-
   /* Slide */
   .slide .slide-content {
     gap: 20px;
