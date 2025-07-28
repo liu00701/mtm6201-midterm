@@ -110,7 +110,7 @@ button {
   color: var(--secondary-grey);
 }
 
-.slide-content .slide-size span {
+.slide-size span {
   font-size: 12px;
   background: var(--black-color);
   border-radius: 8px;
@@ -119,13 +119,13 @@ button {
   margin-left: 10px;
 }
 
-.slide-content .slide-price p {
+.slide-price p {
   font-size: 12px;
   font-weight: 400;
   color: var(--black-color);
 }
 
-.slide-content .slide-price span {
+.slide-price span {
   font-size: 14px;
 }
 
@@ -148,14 +148,14 @@ button {
     0px 1.21px 2.06px rgba(68, 68, 68, 0.024);
 }
 
-.features .feature-item {
+.feature-item {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 5px;
 }
 
-.features .feature-item img {
+.feature-item img {
   max-width: 30px;
   padding: 5px 0;
 }
@@ -199,37 +199,46 @@ button {
 /* Subscribe */
 .subscribe {
   display: flex;
+  max-width: 1200px;
   justify-content: space-between;
   align-items: center;
-  /* gap: 20px; */
+  gap: 10px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .subscribe-image {
   flex: 1;
 }
 
+.subscribe-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .subscribe-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  /* align-items: center; */
   gap: 10px;
+  /* TODO ?? */
   flex: 1;
 }
 
 .subscribe-content h2 {
   font-family: "Volkhov", sans-serif;
-  font-size: 18px;
+  font-size: 3vw;
   color: var(--secondary-black);
 }
 
 .subscribe-content p {
-  font-size: 14px;
+  font-size: 2vw;
   color: var(--grey-color);
 }
 
-.subscribe-content .subscribe-email {
+.subscribe-email {
   color: var(--grey-color);
   font-size: 14px;
   padding: 0 20px;
@@ -240,11 +249,17 @@ button {
     0px 3.02px 3.15px rgba(0, 0, 0, 0.09);
 }
 
-.subscribe-content .subscribe-button {
+.subscribe-button {
   background-color: var(--black-color);
   border-radius: 10px;
-  font-size: 14px;
+  max-width: 200px;
+  align-self: center;
 }
+
+.subscribe-button button {
+  font-size: 2vw;
+}
+
 
 /* Footer */
 footer {
@@ -295,7 +310,6 @@ footer {
 @media screen and (min-width: 760px) {
   .container {
     width: 750px;
-    padding: 2em 0 0em 0;
     margin: 0 auto;
   }
 
@@ -319,15 +333,15 @@ footer {
     line-height: 2;
   }
 
-  .slide-content .slide-size span {
+  .slide-size span {
     font-size: 14px;
   }
 
-  .slide-content .slide-price p {
+  .slide-price p {
     font-size: 12px;
   }
 
-  .slide-content .slide-price span {
+  .slide-price span {
     font-size: 16px;
   }
 
@@ -344,12 +358,11 @@ footer {
     padding: 20px 0;
   }
 
-  .features .feature-item {
-    gap: 5px;
+  .feature-item {
     align-items: center;
   }
 
-  .features .feature-item img {
+  .feature-item img {
     width: 35px;
   }
 
@@ -365,7 +378,19 @@ footer {
 
   /* Subscribe */
   .subscribe-content h2 {
-    font-size: 30px;
+    font-size: 1.6vw;
+  }
+
+  .subscribe-content p {
+    font-size: 1.2vw;
+  }
+
+  .subscribe-button button {
+    font-size: 1.2vw;
+  }
+
+  .subscribe-image img {
+    width: 60%;
   }
 
   /* Footer */
@@ -426,17 +451,17 @@ footer {
     line-height: 2.6;
   }
 
-  .slide-content .slide-size span {
+  .slide-size span {
     font-size: 16px;
     border-radius: 10px;
     padding: 10px 30px;
   }
 
-  .slide-content .slide-price p {
+  .slide-price p {
     font-size: 24px;
   }
 
-  .slide-content .slide-price span {
+  .slide-price span {
     font-size: 28px;
   }
 
@@ -454,12 +479,12 @@ footer {
     padding: 40px 0;
   }
 
-  .features .feature-item {
+  .feature-item {
     gap: 10px;
     align-items: center;
   }
 
-  .features .feature-item img {
+  .feature-item img {
     width: 35px;
   }
 
@@ -499,38 +524,6 @@ footer {
     display: flex;
     align-items: center;
     margin: 30px 0;
-  }
-
-  /* Subscribe */
-  .subscribe {
-    align-items: center;
-    padding: 40px 0;
-    gap: 40px;
-    text-align: center;
-  }
-
-  .subscribe-content {
-    gap: 20px;
-  }
-
-  .subscribe-content h2 {
-    font-size: 46px;
-  }
-
-  .subscribe-content p {
-    line-height: 2.6;
-    font-size: 16px;
-  }
-
-  .subscribe-content .subscribe-email {
-    padding: 0 20px;
-    line-height: 2.6;
-    font-size: 22px;
-  }
-
-  .subscribe-content .subscribe-button {
-    font-size: 16px;
-    padding: 5px 10px;
   }
 
   /* Footer */

@@ -5,10 +5,10 @@ nav ul li {
 }
 
 nav ul li a {
+  /* use block to let link full width */
   display: block;
   color: var(--black-color);
   font-size: 16px;
-  /* use block to let link full width */
   padding: 4px;
 }
 
@@ -22,12 +22,9 @@ nav ul li .sign-up {
 /* Hero */
 .hero {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin: 0 auto;
   gap: 5px;
   text-align: center;
-  /* to make the same height */
-  align-items: stretch;
 }
 
 .hero-image {
@@ -37,9 +34,30 @@ nav ul li .sign-up {
 .hero-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex: 1;
+}
+
+.hero-content h1 {
+  line-height: 1;
+  font-size: 7vw;
+  letter-spacing: -0.04em;
+  margin-top: 10px;
+}
+
+.hero-content h2 {
+  font-size: 11vw;
+  color: transparent;
+  -webkit-text-stroke: 2px black;
+  letter-spacing: -0.055em;
+}
+
+.hero-content p {
+  font-size: 4vw;
+  font-weight: 200;
+  margin-bottom: 10px;
+  letter-spacing: 0.1em;
 }
 
 @keyframes fadeIn {
@@ -47,6 +65,7 @@ nav ul li .sign-up {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -62,53 +81,32 @@ nav ul li .sign-up {
 .hero-image img:nth-child(1) {
   animation-delay: 0.2s;
 }
+
 .hero-content img:nth-child(1) {
   animation-delay: 0.4s;
 }
 
-.hero-content h1 {
-  font-size: 40px;
-  font-weight: 500;
-  letter-spacing: -0.04em;
-  line-height: 1;
-}
-
-.hero-content h2 {
-  font-size: 60px;
-  font-weight: 500;
-  line-height: 1;
-  color: transparent;
-  -webkit-text-stroke: 2px black;
-  letter-spacing: -0.055em;
-}
-
-.hero-content p {
-  font-size: 10px;
-  font-weight: 200;
-  margin-bottom: 10px;
-  letter-spacing: 0.1em;
-}
-
-.hero-content a {
-  background-color: var(--black-color);
-  border-radius: 10px;
-  color: var(--white-color);
-  font-weight: 500;
-  padding: 10px 30px;
-  margin-bottom: 10px;
-}
 
 @keyframes pop {
+
   0%,
   100% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.1);
   }
 }
 
 .hero-content a {
+  background-color: var(--black-color);
+  border-radius: 10px;
+  color: var(--white-color);
+  font-weight: 200;
+  padding: 10px 30px;
+  margin-bottom: 10px;
+  font-size: 3vw;
   animation: pop 1.5s ease-in-out infinite alternate;
   transition: transform 0.2s ease;
 }
@@ -122,11 +120,9 @@ nav ul li .sign-up {
 
 /* Deals */
 .deals-section {
-  background: linear-gradient(
-    to bottom,
-    var(--white-color) 0%,
-    var(--third-grey) 100%
-  );
+  background: linear-gradient(to bottom,
+      var(--white-color) 0%,
+      var(--third-grey) 100%);
 }
 
 .deals {
@@ -142,7 +138,7 @@ nav ul li .sign-up {
   flex-direction: column;
   gap: 10px;
   align-items: center;
-  max-width: 50%;
+  max-width: 80%;
 }
 
 .deals h2 {
@@ -166,22 +162,19 @@ nav ul li .sign-up {
   margin-bottom: 10px;
 }
 
-.countdown .time-units {
+.time-units {
   display: flex;
   gap: 10px;
   text-align: center;
 }
 
-.countdown .time-unit div {
+.time-value {
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
   max-height: 30px;
   max-width: 30px;
   border-radius: 10px;
   padding: 12px;
   background-color: var(--white-color);
-}
-
-.countdown .time-unit div p {
   font-family: "Digital Numbers Regular";
   font-size: 20px;
   color: var(--black-color);
@@ -213,7 +206,7 @@ nav ul li .sign-up {
   color: var(--black-color);
 }
 
-.arrows {
+.deal-arrow {
   background-color: var(--white-color);
   color: var(--black-color);
   border-radius: 50%;
@@ -245,14 +238,15 @@ nav ul li .sign-up {
   cursor: pointer;
 }
 
-.radio-buttons input:checked + label {
+.radio-buttons input:checked+label {
   background: var(--black-color);
 }
 
-/* Arrivals */
+/* New Arrivals */
 .arrival-title {
   text-align: center;
 }
+
 .arrivals h2 {
   font-family: "Volkhov", sans-serif;
 }
@@ -265,7 +259,6 @@ nav ul li .sign-up {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 5px;
 }
 
 .arrival-categories button {
@@ -296,58 +289,58 @@ nav ul li .sign-up {
   border-radius: 10px;
 }
 
-.arrival-card .arrival-info {
+.arrival-info {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.arrival-card .arrival-product {
+.arrival-product {
   display: flex;
   justify-content: space-between;
 }
 
-.arrival-card .product-name {
+.product-name {
   font-weight: bold;
   font-size: 18px;
   color: var(--secondary-black);
 }
 
-.arrival-card .brand-name {
+.brand-name {
   font-size: 16px;
   color: var(--grey-color);
   line-height: 1.2;
 }
 
-.arrival-card .star-rating span {
+.star-rating span {
   color: var(--yellow);
   font-size: 20px;
 }
 
-.arrival-card .arrival-price {
+.arrival-price {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.arrival-card .price {
+.product-price-value {
   font-size: 24px;
   font-weight: 400;
 }
 
-.arrival-card .reviews {
+.arrival-reviews {
   font-weight: 400;
   font-size: 12px;
 }
 
-.arrival-card .stock-state {
+.product-stock {
   color: var(--red);
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.01em;
 }
 
-.arrival-view-more {
+.arrival-viewmore {
   text-align: center;
 }
 
@@ -373,19 +366,19 @@ nav ul li .sign-up {
   color: var(--secondary-black);
 }
 
-.feedback .feedback-title p {
+.feedback-title p {
   font-size: 16px;
   color: var(--grey-color);
   margin-bottom: 10px;
 }
 
-.feedback .feedback-cards {
+.feedback-cards {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.feedback .feedback-card {
+.feedback-card {
   display: flex;
   flex-direction: column;
   background-color: var(--white-color);
@@ -411,13 +404,13 @@ nav ul li .sign-up {
   right: 40px;
 }
 
-.feedback .feedback-image img {
+.feedback-image img {
   min-width: 50px;
   height: auto;
   box-shadow: -10px 10px 0px rgba(217, 217, 217, 1);
 }
 
-.feedback .feedback-info {
+.feedback-info {
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -425,7 +418,7 @@ nav ul li .sign-up {
   gap: 5px;
 }
 
-.feedback .feedback-comment {
+.feedback-comment {
   font-size: 12px;
   line-height: 1;
   color: var(--secondary-black);
@@ -436,25 +429,25 @@ nav ul li .sign-up {
   font-size: 12px;
 }
 
-.feedback .feedback-name {
+.feedback-name {
   font-family: "Volkhov", sans-serif;
   font-size: 14px;
   color: var(--secondary-black);
   border-top: 1px solid var(--secondary-black);
 }
 
-.feedback .feedback-who {
+.feedback-who {
   font-size: 14px;
   color: var(--secondary-black);
 }
 
-.feedback .feedback-arrows {
+.feedback-arrows {
   display: flex;
   gap: 20px;
   margin-top: 20px;
 }
 
-.feedback .arrow {
+.feedback-arrow {
   background-color: var(--white-color);
   color: var(--grey-color);
   border-radius: 50%;
@@ -467,7 +460,7 @@ nav ul li .sign-up {
   padding: 0;
 }
 
-.feedback .arrow:last-child {
+.feedback-arrow:last-child {
   color: var(--black-color);
 }
 
@@ -475,6 +468,7 @@ nav ul li .sign-up {
 Tablet: 760 and up
 */
 @media screen and (min-width: 760px) {
+
   /* Nav */
   nav {
     display: flex;
@@ -496,62 +490,44 @@ Tablet: 760 and up
 
   /* Hero */
   .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 0;
-    gap: 40px;
-    text-align: center;
+    gap: 20px;
   }
 
   .hero-image {
-    height: 756px;
-    width: 392px;
+    flex: 1;
+    aspect-ratio: 3 / 4;
     background-color: var(--forth-grey);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: end;
+    padding-top: 80px;
   }
 
   .hero-image img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    max-height: 570px;
-  }
-
-  .hero-content {
-    height: 756px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
   }
 
   .hero-content h1 {
-    font-size: 91px;
-    font-weight: 500;
-    letter-spacing: -0.04em;
+    font-size: 5vw;
   }
 
   .hero-content h2 {
-    font-size: 187px;
+    font-size: 10vw;
     font-weight: 500;
-    color: transparent;
-    -webkit-text-stroke: 2px black;
-    letter-spacing: -0.055em;
   }
 
   .hero-content p {
-    font-size: 20px;
-    font-weight: 200;
-    margin-bottom: 20px;
-    letter-spacing: 0.1em;
+    font-size: 1.5vw;
+  }
+
+  .hero-content a {
+    font-size: 1.2vw;
   }
 
   .hero-content button {
-    font-weight: 500;
     padding: 20px 60px;
     max-width: 207px;
   }
@@ -566,6 +542,10 @@ Tablet: 760 and up
   /* Deals */
   .deals {
     padding: 40px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
   }
 
   .deals h2 {
@@ -573,9 +553,8 @@ Tablet: 760 and up
   }
 
   .deal-content {
-    align-items: center;
-    gap: 20px;
     max-width: 50%;
+    align-items: flex-start;
   }
 
   .countdown {
@@ -586,17 +565,17 @@ Tablet: 760 and up
     font-size: 28px;
   }
 
-  .countdown .time-unit div {
+  .time-unit div {
     max-height: 76px;
     max-width: 76px;
     padding: 15px;
   }
 
-  .countdown .time-unit div p {
+  .time-unit div p {
     font-size: 32px;
   }
 
-  .arrows {
+  .deal-arrow {
     width: 48px;
     height: 48px;
   }
@@ -614,23 +593,13 @@ Desktop: 1200px and up
     font-size: 16px;
   }
 
-  /* Deals */
-  .deals {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 30px;
-  }
-
-  .deal-content {
-    align-items: flex-start;
-  }
 }
 
 /*
 Desktop: 1600px and up
 */
 @media screen and (min-width: 1600px) {
+
   /* Arrivals */
   .arrivals h2 {
     font-size: 46px;
@@ -649,12 +618,12 @@ Desktop: 1600px and up
     font-size: 46px;
   }
 
-  .feedback .feedback-title p {
+  .feedback-title p {
     line-height: 2.6;
     margin-bottom: 30px;
   }
 
-  .feedback .feedback-card {
+  .feedback-card {
     display: flex;
     flex-direction: row;
     padding: 40px;
@@ -668,16 +637,16 @@ Desktop: 1600px and up
     transform: scale(0.8);
   }
 
-  .feedback .feedback-image img {
+  .feedback-image img {
     max-width: 242px;
   }
 
-  .feedback .feedback-info {
+  .feedback-info {
     padding: 0 30px;
     /* flex: 1; */
   }
 
-  .feedback .feedback-comment {
+  .feedback-comment {
     font-size: 16px;
     line-height: 1.5;
     min-width: 200px;
@@ -687,15 +656,15 @@ Desktop: 1600px and up
     font-size: 20px;
   }
 
-  .feedback .feedback-separator {
+  .feedback-separator {
     max-width: 200px;
   }
 
-  .feedback .feedback-name {
+  .feedback-name {
     font-size: 30px;
   }
 
-  .feedback .feedback-who {
+  .feedback-who {
     font-size: 16px;
   }
 }
